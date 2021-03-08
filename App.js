@@ -10,6 +10,7 @@ const API_KEY = "cf103dc043464dfe8445c7d6ad4a9cc0";
 export default class extends React.Component {
   state = {
     isLoading: true,
+    condition: "Clear",
   };
   //getWeather 위해서 Axios 설치하였음
   getWeather = async (latitude, longitude) => {
