@@ -23,6 +23,7 @@ export default class extends React.Component {
       isLoading: false,
       temp: data.main.temp,
       condition: data.weather[0].main,
+      city: data.name,
     });
   };
   getLocation = async () => {
@@ -42,11 +43,11 @@ export default class extends React.Component {
     this.getLocation();
   }
   render() {
-    const { isLoading, temp, condition } = this.state;
+    const { isLoading, temp, condition, city } = this.state;
     return isLoading ? (
       <Loading />
     ) : (
-      <Weather temp={Math.round(temp)} condition={condition} />
+      <Weather temp={Math.round(temp)} condition={condition} city={city} />
     );
   }
 }

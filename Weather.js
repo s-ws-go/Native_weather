@@ -49,7 +49,7 @@ const weatherOptions = {
   },
 };
 
-export default function Weather({ temp, condition }) {
+export default function Weather({ temp, condition, city }) {
   return (
     <LinearGradient
       // Button Linear Gradient
@@ -64,6 +64,7 @@ export default function Weather({ temp, condition }) {
           color="white"
         />
         <Text style={styles.temp}>{temp}℃</Text>
+        <Text style={styles.temp}>{city}</Text>
       </View>
       <View style={{ ...styles.halfcontainer, ...styles.textcontainer }}>
         <Text style={styles.title}>{weatherOptions[condition].title}</Text>
