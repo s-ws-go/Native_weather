@@ -9,7 +9,6 @@
       "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
-      
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -28,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "",
+    "githubUrl": "https://github.com/s-ws-go/Native_weather"
   }
 }
